@@ -16,7 +16,7 @@ auto tpool = std::make_shared<tp::ThreadPool_noblock<tp::MPMCBoundedQueue>>(1000
 tpool->init();
 ```
 
-Next, commit your tasks by =tpool->commit()=
+Next, commit your tasks by `tpool->commit()`
 ```C++
 // commit a task without any argument.\
 // you can perform this by using a lambda to capture the function argument manually.
