@@ -4,9 +4,9 @@ Requires a C++-14 compiler.
 ## Usage
 This thread pool API at its internal is implemented as a queue. So first you need to grab a specific type of queue. 
 The code ships with three types of queue, namely: 
-* =MPMCBoundedQueue= : A thread-safe, multi-producer/multi-consumer lock-free queue. This one always has the best performance. So pick this up if you have no idea about them. 
-* =safe_queue_mutex= : A thread-safe queue implemented using Mutex lock. 
-* =safe_queue_condvar= : A thread-safe queue implemented using Conditional Variable. 
+* `MPMCBoundedQueue` : A thread-safe, multi-producer/multi-consumer lock-free queue. This one always has the best performance. So pick this up if you have no idea about them. 
+* `safe_queue_mutex` : A thread-safe queue implemented using Mutex lock. 
+* `safe_queue_condvar` : A thread-safe queue implemented using Conditional Variable. 
 
 Then, initialize a ThreadPool.
 ```C++
